@@ -1,0 +1,58 @@
+html, body {
+  min-width: 320px; /* Ancho mínimo */
+  min-height: 480px; /* Alto mínimo */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  color: whitesmoke;
+  background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+  height: auto; /* Ocupa todo el alto del contenedor padre */
+  max-width: 1000px;
+}
+
+.page-container {
+  margin-top: 76px;
+  flex-grow: 1; /* Esto hará que ocupe el espacio restante disponible */
+  margin-inline: 2%;
+  margin-bottom: 140px;
+}
+
+/* Para pantallas de al menos 576px (sm en Bootstrap) */
+@media (min-width: 576px) {
+.page-container {
+    margin-inline: 4%;
+}
+}
+
+/* Para pantallas de al menos 768px (md en Bootstrap) */
+@media (min-width: 768px) {
+.page-container {
+    margin-inline: 6%;
+}
+}
+
+/* Para pantallas de al menos 992px (lg en Bootstrap) */
+@media (min-width: 992px) {
+.page-container {
+    margin-inline: 8%;
+}
+}
+
+/* Para pantallas de al menos 1200px (xl en Bootstrap) */
+@media (min-width: 1200px) {
+.page-container {
+  margin-inline: auto;
+}
+}

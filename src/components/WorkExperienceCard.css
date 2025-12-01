@@ -1,0 +1,24 @@
+.card-text {
+    white-space: pre-line;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 30px;
+}

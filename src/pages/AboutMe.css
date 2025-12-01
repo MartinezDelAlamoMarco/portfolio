@@ -1,0 +1,35 @@
+.about-me-content {
+    font-size: 1.4rem !important;
+}
+
+.important {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Cuando el ancho de la pantalla es menor a 480px (por ejemplo, teléfonos móviles) */
+@media (max-width: 480px) {
+    .about-me-content {
+        font-size: 1.1rem !important;
+    }
+}
+
+.about-me-content li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  font-size: clamp(1rem, 1.5vw, 1.25rem); /* se ajusta según el ancho del contenedor */
+}
+
+.about-me-content li img {
+  flex-shrink: 0;
+}
+
+.about-me-content li span,
+.about-me-content li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

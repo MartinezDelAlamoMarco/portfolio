@@ -1,0 +1,31 @@
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* Columnas dinámicas */
+  gap: 16px; /* Espacio entre las tarjetas */
+  justify-content: center;
+  margin: 0 auto; /* Centrar en la página */
+  padding: 16px;
+}
+
+.important {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.custom-content {
+  font-size: 1.1rem !important;
+  text-align: justify; /* Justifica el texto */
+  hyphens: auto; /* Permite dividir palabras con guiones si es necesario */
+  -webkit-hyphens: auto; /* Soporte para Safari/WebKit */
+  -ms-hyphens: auto; /* Soporte para IE/Edge antiguos */
+}
+
+/* Cuando el ancho de la pantalla es menor a 480px (por ejemplo, teléfonos móviles) */
+@media (max-width: 480px) {
+  .custom-content {
+    font-size: 0.9rem !important;
+  }
+}
