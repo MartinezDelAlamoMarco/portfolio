@@ -20,7 +20,7 @@ const Home = () => {
         </p>
         Cumplo con 3 meses de experiencia trabajando como
         <span className="important"> Junior Full Stack Developer</span>
-        , y estoy trabajando actualmente como
+        , y 9 meses de experiencia trabajando como
         <span className="important"> Técnico de Informática especializado en ciberseguridad</span>.
       </p>
       <p className="main-description">
