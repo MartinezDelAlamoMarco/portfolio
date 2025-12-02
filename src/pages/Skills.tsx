@@ -31,6 +31,7 @@ import vmwareLogo from "../assets/vmware.png";
 import virtualboxLogo from "../assets/virtualbox.png";
 import bootstrapLogo from "../assets/bootstrap.png";
 import cvPDF from "../assets/CV_Marco_Martinez.pdf";
+import pythonLogo from "../assets/python.png"
 
 const Skills = () => {
   return (
@@ -85,8 +86,11 @@ const Skills = () => {
                   <li className="my-3">
                     <img height="45" className="me-3" src={typescriptLogo} alt="TypeScript" /> TypeScript
                   </li>
-                  <li className="my-3">
+                  <li className="my-4">
                     <img height="28" className="me-3" src={phpLogo} alt="PHP" /> PHP
+                  </li>
+                  <li className="my-3">
+                    <img height="45" className="me-3" src={pythonLogo} alt="Python" /> Python
                   </li>
                 </ul>
               </div>
@@ -108,7 +112,7 @@ const Skills = () => {
                   <li className="my-3">
                     <img height="36" className="me-3" src={bootstrapLogo} alt="Bootstrap" /> Bootstarp
                   </li>
-                  <li className="my-3">
+                  <li className="my-4">
                     <img height="40" className="me-3" src={aspNetLogo} alt="ASP.NET" /> ASP.NET
                   </li>
                   <li className="my-3">
