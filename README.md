@@ -1,50 +1,103 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Portfolio Web
+Modern web portfolio for showcasing projects, skills, and professional experience. Built with a frontend architecture using React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Vite-61DAFB?style=flat-square" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Description
+This project is a personal portfolio web application designed to present my background, skills, and selected projects. The platform is built with a modular, scalable frontend architecture, following modern web development best practices.
 
-## Expanding the ESLint configuration
+The main goals are:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Professional online presence
+- Modular and maintainable codebase
+- Modern UI/UX
+- Easy project and experience management
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Features
+✅ Responsive and interactive UI  
+✅ Modular React + TypeScript architecture  
+✅ Project and experience showcase  
+✅ Downloadable CV  
+✅ Contact via email  
+✅ Modern design with Bootstrap  
+✅ Easy to extend and maintain
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🧱 Project Structure
+
+portfolio/
+│
+├── public/           # Static assets
+├── src/              # Source code
+│   ├── assets/       # Images, icons, CV, etc.
+│   ├── components/   # Reusable UI components
+│   ├── interfaces/   # TypeScript interfaces
+│   ├── pages/        # Main pages (Home, About, Skills, Projects, etc.)
+│   └── main.tsx      # App entry point
+├── package.json      # Project metadata and scripts
+├── tsconfig*.json    # TypeScript configuration
+├── vite.config.ts    # Vite configuration
+└── README.md         # Project documentation
+
+## 🎨 Main Sections
+
+- **Home:** Introduction and quick overview
+- **About Me:** Background, education, and goals
+- **Skills:** Technologies and tools
+- **Projects:** Selected works with details and links
+- **Work Experience:** Professional experience
+- **Contact:** Email and CV download
+
+## 🛠️ Tech Stack
+
+| Area         | Technologies                       |
+|--------------|------------------------------------|
+| Frontend     | React, TypeScript, Vite, Bootstrap |
+| State/Router | React Router                       |
+| Assets       | Bootstrap Icons, Custom images     |
+| Linting      | ESLint, TypeScript ESLint          |
+| Deployment   | Firebase Hosting (optional)        |
+| Versioning   | Git & GitHub                       |
+
+## ⚙️ Installation & Usage
+
+1️⃣ Clone the repository
+
+```sh
+git clone <your-repo-url>
+cd portfolio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2️⃣ Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm install
 ```
+
+3️⃣ Start the development server
+
+```sh
+npm run dev
+```
+
+4️⃣ Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## 📌 Project Objectives
+
+- Build a professional web portfolio
+- Practice modular React + TypeScript development
+- Apply modern web design and UX
+- Showcase real projects and experience
+- Facilitate contact and CV download
+
+## 🔮 Future Improvements
+
+- Add authentication for admin editing
+- Integrate a blog or news section
+- Improve accessibility (a11y)
+- Add more animations and transitions
+- Automated tests (unit/integration)
+- Deploy to a custom domain

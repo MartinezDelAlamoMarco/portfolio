@@ -1,13 +1,13 @@
 import { Link } from "react-router"
 import "./Home.css"
 import ButtonMailto from "../components/ButtonMailto"
-import faceImage from "../assets/marco.jpeg";
+import faceImage from "../assets/Foto_CV_MM.png";
 import cvPDF from "../assets/CV_Marco_Martinez.pdf";
 
 const Home = () => {
   return (
     <>
-      <img className="face-image" src={faceImage} width="120px" height="120px" />
+      <img className="face-image" src={faceImage} width="140px" height="140px" />
       <h1 className="mb-4">Hola! Soy Marco Martínez</h1>
       <p className="main-description">
         <p>
