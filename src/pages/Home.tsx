@@ -43,6 +43,10 @@ const Home = () => {
             <i className="bi bi-linkedin me-2"></i>
             LinkedIn
           </Link>
+          <Link to="https://github.com/MartinezDelAlamoMarco" target="_blank" className="btn btn-secondary me-3 mb-3  rounded-5">
+            <i className="bi bi-github me-2"></i>
+            GitHub
+          </Link>
         </div>
         <h3 className="mt-4">Información de contacto:</h3>
         <ul className="main-description">

@@ -1,127 +1,145 @@
 .bottom-navbar {
-    z-index: 1 !important;
+  z-index: 1 !important;
 }
 
 .bottom-navbar-content {
-    background-color: rgba(255, 255, 255, 0.1);
-    min-height: 48px;
-    padding: 8px;
-    display: inline-flex; /* Se ajusta al contenido */
-    max-width: 430px;
-}
-
-.bottom-nav-item {
-    padding: 0;
-    width: 56px; /* Más ancho */
-    margin-inline: 9px;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 56px;
+  padding: 8px 0;
+  display: flex;
+  max-width: 480px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .bottom-navbar-btn {
-    width: 56px;
-    padding-inline: 16px;
-    border-radius: 30px !important;
-    transition: background-color 0.2s ease-in-out !important; /* Transición suave */
-    outline: none !important; /* Quita el borde negro */
-    box-shadow: none !important; /* Previene efectos adicionales */
+  width: 56px;
+  .bottom-navbar-btn {
+    width: auto;
+    min-width: 64px;
+    height: 100%;
+    padding: 8px 18px 4px 18px;
+    border-radius: 18px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent;
+  }
+  font-size: 0.75rem;
+  margin-top: 2px;
+  color: #fff;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  text-align: center;
+}
+
+.bottom-navbar-nav-link.active .bottom-nav-text,
+.bottom-navbar-nav-link:focus .bottom-nav-text,
+.bottom-navbar-nav-link:hover .bottom-nav-text {
+  opacity: 1;
 }
 
 /* Color de fondo cuando se hace hover */
 .bottom-navbar-btn:hover {
-    background-color: #595a5c !important;
+  background-color: #595a5c !important;
 }
 
 /* Mantener el color blanco del icono cuando se hace click o tiene el foco */
 .bottom-navbar-nav-link:active i,
 .bottom-navbar-nav-link:focus i {
-    color: whitesmoke !important;
+  color: whitesmoke !important;
 }
 
 /* No cambia color al hacer clic en el enlace activo */
 .bottom-navbar-nav-link.active i {
-    color: whitesmoke !important; /* Mantiene el color blanco del icono cuando está activo */
+  color: whitesmoke !important; /* Mantiene el color blanco del icono cuando está activo */
 }
 
 /* Aplicar el color al fondo y al icono cuando está activo */
 .bottom-navbar-nav-link.active {
-    background-color: #007bff !important; /* Cambia el fondo o cualquier estilo que prefieras */
-    color: whitesmoke !important; /* Asegura que el texto se mantenga blanco */
+  background-color: #007bff !important; /* Cambia el fondo o cualquier estilo que prefieras */
+  color: whitesmoke !important; /* Asegura que el texto se mantenga blanco */
 }
 
 .bottom-navbar li {
-    margin-inline: 4px;
+  margin-inline: 4px;
 }
 
 .bottom-navbar i {
-    font-size: larger;
-    color: whitesmoke;
+  font-size: larger;
+  color: whitesmoke;
 }
 
 /* Estilos generales para el tooltip */
 .bottom-navbar-nav-link {
-    position: relative; /* Necesario para el posicionamiento absoluto del tooltip */
+  position: relative; /* Necesario para el posicionamiento absoluto del tooltip */
 }
 
 .bottom-navbar-nav-link[data-tooltip]:hover::after {
-    content: attr(data-tooltip); /* Muestra el contenido del atributo data-tooltip */
-    position: absolute;
-    bottom: 114%; /* Aparece arriba del elemento */
-    left: 50%; /* Centrado horizontal */
-    transform: translateX(-50%);
-    background-color: #333; /* Color de fondo del tooltip */
-    color: #fff; /* Color del texto */
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap; /* Evita que el texto se divida */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease-in-out; /* Transición suave */
+  content: attr(
+    data-tooltip
+  ); /* Muestra el contenido del atributo data-tooltip */
+  position: absolute;
+  bottom: 114%; /* Aparece arriba del elemento */
+  left: 50%; /* Centrado horizontal */
+  transform: translateX(-50%);
+  background-color: #333; /* Color de fondo del tooltip */
+  color: #fff; /* Color del texto */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap; /* Evita que el texto se divida */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out; /* Transición suave */
 }
 
 /* Mostrar el tooltip cuando se pasa el ratón por encima */
 .bottom-navbar-nav-link[data-tooltip]:hover::after {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .separator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vertical-bar {
-    width: 1.8px;
-    height: 44px;
-    background-color: #fff;
-    margin: 0 2px;
+  width: 1.8px;
+  height: 44px;
+  background-color: #fff;
+  margin: 0 2px;
+}
+.bottom-navbar-btn {
+  padding: 4px 8px 2px 8px;
+  border-radius: 12px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  gap: 2px;
 }
 
-/* Cuando el ancho de la pantalla es menor a 480px (por ejemplo, teléfonos móviles) */
-@media (max-width: 480px) {
-    .bottom-navbar-content {
-        background-color: rgba(255, 255, 255, 0.1);
-        min-height: 48px;
-        padding: 8px;
-        display: inline-flex; /* Se ajusta al contenido */
-        max-width: 350px;
-    }
+.bottom-navbar-btn {
+  min-width: 68px;
+  height: 60px;
+  gap: 1px;
+}
 
-    .bottom-nav-item {
-        padding: 0;
-        width: 40px;
-    }
-    
-    .bottom-navbar-btn {
-        width: 40px;
-        border-radius: 30px !important;
-        transition: background-color 0.2s ease-in-out !important; /* Transición suave */
-        outline: none !important; /* Quita el borde negro */
-        box-shadow: none !important; /* Previene efectos adicionales */
-    }
-
-    .bottom-navbar i {
-        font-size: medium;
-        color: whitesmoke;
-    }
+.bottom-nav-text {
+  font-size: 0.7rem;
+  margin-top: 1px;
 }
