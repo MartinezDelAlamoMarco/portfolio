@@ -28,6 +28,7 @@ The main goals are:
 
 ## 🧱 Project Structure
 
+```plaintext
 portfolio/
 │
 ├── public/           # Static assets
@@ -41,6 +42,7 @@ portfolio/
 ├── tsconfig*.json    # TypeScript configuration
 ├── vite.config.ts    # Vite configuration
 └── README.md         # Project documentation
+```
 
 ## 🎨 Main Sections
 
